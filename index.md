@@ -42,3 +42,5 @@ Zexin Cai received the B.S. in Software Engineering from Sun Yet-sen University.
 - [multispeaker speech synthesis](https://caizexin.github.io/mlspk-syn-samples/index.html)
 
 - [Blizzard Challenge 2020](https://caizexin.github.io/blizzard_2020/index.html)
+
+- [Cross-lingual text-to-speech](https://caizexin.github.io/mlms-syn-samples/index.html)
