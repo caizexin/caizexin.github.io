@@ -1,6 +1,77 @@
 ---
 ---
 
+@INPROCEEDINGS{Li2025scalabletts,
+  bibtex_show={true},
+  author={Li Xinyuan, Henry and Cai, Zexin and Grag, Ashi and Duh, Kevin and Garc\'ia-Perera, Leibny Paola and Khudanpur, Sanjeev and Andrews, Nicholas and Wiesner, Matthew},
+  booktitle={IEEE Workshop on Automatic Speech Recognition and Understanding}, 
+  title={Scalable Controllable Accented TTS}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={},
+  preview={accentedTTS.png},
+  html = {https://arxiv.org/pdf/2508.07426},
+  website={https://hstehstehste.github.io/Projects/Demo/index.html},
+  abstract = {We propose a method to scale accented TTS training to large, accent-diverse datasets that often lack consistent, high-quality accent labels. Our approach relies on a speech geolocation model to infer accent labels directly from audio. To improve speaker generalization and encourage disentangling speaker from accent we explore timbre augmentation through kNN voice conversion. We validate our approach on CommonVoice by fine-tuning XTTS-v2 with accent labels inferred or improved via geolocation. According to various automated metrics based on embeddings extracted from an accent identification model, the resulting accented TTS model produces speech with better accent fidelity compared to XTTS-v2 fine-tuned on self-reported accent labels in CommonVoice, or other existing accented TTS models. According to human evaluation, it was clear that the geolocation model based data discovery and enhancement improved the naturalness and accent fidelity of generated speech. However, the effect of different data augmentation strategies was less clear.}}
+
+  @INPROCEEDINGS{Grag2025fewshot,
+  bibtex_show={true},
+  author={Grag, Ashi and Cai, Zexin and Li Xinyuan, Henry and Garc\'ia-Perera, Leibny Paola and Duh, Kevin and Khudanpur, Sanjeev and Wiesner, Matthew and Andrews, Nicholas},
+  booktitle={IEEE Workshop on Automatic Speech Recognition and Understanding}, 
+  title={Rapidly Adapting to New Voice Spoofing: Few-Shot Detection of Synthesized Speech Under Distribution Shifts}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={},
+  preview={fewshot.png},
+  html = {https://arxiv.org/pdf/2508.13320},
+  abstract = {We address the challenge of detecting synthesized speech under distribution shifts—arising from unseen synthesis methods, speakers, languages, or audio conditions—relative to the training data. Few-shot learning methods are a promising way to tackle distribution shifts by rapidly adapting on the basis of a few in-distribution samples. We propose a self-attentive prototypical network to enable more robust few-shot adaptation. To evaluate our approach, we systematically compare the performance of traditional zero-shot detectors and the proposed few-shot detectors, carefully controlling training conditions to introduce distribution shifts at evaluation time. In conditions where distribution shifts hamper the zero-shot performance, our proposed few-shot adaptation technique can quickly adapt using as few as 10 in-distribution samples—achieving upto 32% relative EER reduction on deepfakes in Japanese language and 20% relative reduction on ASVspoof 2021 Deepfake dataset.}}
+
+@INPROCEEDINGS{CAI2025genVC,
+  bibtex_show={true},
+  author={Cai, Zexin and Li Xinyuan, Henry and Grag, Ashi and Garc\'ia-Perera, Leibny Paola and Duh, Kevin and Khudanpur, Sanjeev and Wiesner, Matthew and Andrews, Nicholas},
+  booktitle={IEEE Workshop on Automatic Speech Recognition and Understanding}, 
+  title={GenVC: Self-Supervised Zero-Shot Voice Conversion}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={},
+  selected={true},
+  preview={genVC.png},
+  html = {https://arxiv.org/pdf/2502.04519},
+  website={https://caizexin.github.io/GenVC/index.html},
+  abstract = {Most current zero-shot voice conversion methods rely on externally supervised components, particularly speaker encoders, for training. To explore alternatives that eliminate this dependency, this paper introduces GenVC, a novel framework that disentangles speaker identity and linguistic content from speech signals in a self-supervised manner. GenVC leverages speech tokenizers and an autoregressive, Transformer-based language model as its backbone for speech generation. This design supports large-scale training while enhancing both source speaker privacy protection and target speaker cloning fidelity. Experimental results demonstrate that GenVC achieves notably higher speaker similarity, with naturalness on par with leading zero-shot approaches. Moreover, due to its autoregressive formulation, GenVC introduces flexibility in temporal alignment, reducing the preservation of source prosody and speaker-specific traits, and making it highly effective for voice anonymization.}}
+
+@article{CAI2025SelfSupervisedRefLearning,
+  bibtex_show={true},
+  title = {Self-Supervised Reflective Learning Through Self-Distillation and Online Clustering for Speaker Representation Learning},
+  journal = {IEEE Transactions on Audio, Speech and Language Processing},
+  volume = {33},
+  pages = {1535-1550},
+  year = {2025},
+  preview={selfRef.png},
+  doi = {https://doi.org/10.1109/TASLPRO.2025.3555132},
+  html = {https://ieeexplore.ieee.org/abstract/document/10938970},
+  author = {Danwei Cai and Zexin Cai and Li Ze and Ming Li},
+  abstract = {Speaker representation learning is crucial for voice recognition systems, with recent advances in self-supervised approaches reducing dependency on labeled data. Current two-stage iterative frameworks, while effective, suffer from significant computational overhead due to repeated rounds of clustering and training. They also struggle with noisy pseudo labels that can impair model learning. This paper introduces self-supervised reflective learning (SSRL), an improved framework that addresses these limitations by enabling continuous refinement of pseudo labels during training. Through a teacher-student architecture and online clustering mechanism, SSRL eliminates the need for iterative training rounds. To handle label noise, we incorporate noisy label modeling and pseudo label queues that maintain temporal consistency. Experiments on VoxCeleb show SSRL's superiority over current two-stage iterative approaches, surpassing the performance of a 5-round method in just a single training round. Ablation studies validate the contributions of key components like noisy label modeling and pseudo label queues. Moreover, consistent improvements in pseudo labeling and the convergence of cluster counts demonstrate SSRL's effectiveness in deciphering unlabeled data. This work marks an important advancement in efficient and accurate self-supervised speaker representation learning through the novel reflective learning paradigm.}
+}
+
+@INPROCEEDINGS{li2024database,
+  bibtex_show={true},
+  author={Li, Ze and Lin, Yuke and Yao, Tian and Suo, Hongbin and Zhang, Pengyuan and Ren, Yanzhen and Cai, Zexin and Nishizaki, Hiromitsu and Li, Ming},
+  booktitle={IEEE Spoken Language Technology Workshop}, 
+  title={The Database and Benchmark For the Source Speaker Tracing Challenge 2024}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1254-1261},
+  preview={SSTC.png},
+  html = {https://ieeexplore.ieee.org/abstract/document/10832292},
+  website={https://sstc-challenge.github.io},
+  abstract = {Voice conversion (VC) systems can transform audio to mimic another speaker’s voice, thereby attacking speaker verification (SV) systems. However, ongoing studies on source speaker verification (SSV) are hindered by limited data availability and methodological constraints. This paper presents the Source Speaker Tracking Challenge (SSTC) on STL 2024, which aims to fill the gap in the database and benchmark for the SSV task. In this study, we generate a large-scale converted speech database with 16 common VC methods and train a batch of baseline systems based on the MFA-Conformer architecture. In addition, we introduced a related task called conversion method recognition, with the aim of assisting the SSV task. We expect SSTC to be a platform for advancing the development of the SSV task and provide further insights into the performance and limitations of current SV systems against VC attacks.}}
+
+
 @INPROCEEDINGS{CAI2024privacy,
   bibtex_show={true},
   author={Cai, Zexin and Li Xinyuan, Henry and Grag, Ashi and Garc\'ia-Perera, Leibny Paola and Duh, Kevin and Khudanpur, Sanjeev and Andrews, Nicholas and Wiesner, Matthew},
@@ -9,10 +80,10 @@
   year={2024},
   volume={},
   number={},
-  pages={},
+  pages={409-414},
   selected={true},
   preview={spk_emo.png},
-  html = {https://arxiv.org/abs/2409.03655},
+  html = {https://ieeexplore.ieee.org/document/10832351},
   website={https://caizexin.github.io/EmoSpk_Tradeoff/index.html},
   abstract = {Advances in speech technology now allow unprecedented access to personally identifiable information through speech. To protect such information, the differential privacy field has explored ways to anonymize speech while preserving its utility, including linguistic and paralinguistic aspects. However, anonymizing speech while maintaining emotional state remains challenging. We explore this problem in the context of the VoicePrivacy 2024 challenge. Specifically, we developed various speaker anonymization pipelines and find that approaches either excel at anonymization or preserving emotion state, but not both simultaneously. Achieving both would require an in-domain emotion recognizer. Additionally, we found that it is feasible to train a semi-effective speaker verification system using only emotion representations, demonstrating the challenge of separating these two modalities.}}
 

@@ -2,5 +2,6 @@ github_users:
   - caizexin
 
 github_repos:
+  - caizexin/GenVC
   - caizexin/tf_multispeakerTTS_fc
   - caizexin/speechbrain_PartialFake

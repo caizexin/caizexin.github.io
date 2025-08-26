@@ -184,7 +184,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Zero-shot voice conversion has recently made substantial progress, but many models still depend on external supervised systems to disentangle speaker identity and linguistic content. Furthermore, current methods often use parallel conversion, where the converted speech inherits the source utterance's temporal structure, restricting speaker similarity and privacy.  To overcome these limitations, we introduce GenVC, a generative zero-shot voice conversion model. GenVC learns to disentangle linguistic content and speaker style in a self-supervised manner, eliminating the need for external models and enabling efficient training on large, unlabeled datasets. Experimental results show that GenVC achieves state-of-the-art speaker similarity while maintaining naturalness competitive with leading approaches. Its autoregressive generation also allows the converted speech to deviate from the source utterance’s temporal structure. This feature makes GenVC highly effective for voice anonymization, as it minimizes the preservation of source prosody and speaker characteristics, enhancing privacy protection.
+            Most current zero-shot voice conversion methods rely on externally supervised components, particularly speaker encoders, for training. To explore alternatives that eliminate this dependency, this paper introduces GenVC, a novel framework that disentangles speaker identity and linguistic content from speech signals in a self-supervised manner. GenVC leverages speech tokenizers and an autoregressive, Transformer-based language model as its backbone for speech generation. This design supports large-scale training while enhancing both source speaker privacy protection and target speaker cloning fidelity. Experimental results demonstrate that GenVC achieves notably higher speaker similarity, with naturalness on par with leading zero-shot approaches. Moreover, due to its autoregressive formulation, GenVC introduces flexibility in temporal alignment, reducing the preservation of source prosody and speaker-specific traits, and making it highly effective for voice anonymization.
           </p>
         </div>
       </div>
@@ -836,13 +836,14 @@
     <pre><code>@misc{cai2025genvcselfsupervisedzeroshotvoice,
       title={GenVC: Self-Supervised Zero-Shot Voice Conversion}, 
       author={Zexin Cai and Henry Li Xinyuan and Ashi Garg and Leibny Paola García-Perera and Kevin Duh and Sanjeev Khudanpur and Matthew Wiesner and Nicholas Andrews},
+      booktitle={IEEE Workshop on Automatic Speech Recognition and Understanding}, 
       year={2025},
-      eprint={2502.04519},
-      archivePrefix={arXiv},
+      volume={},
+      number={},
+      pages={},
 }</code></pre>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
